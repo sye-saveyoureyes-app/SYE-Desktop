@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/downloads/SYE-mac-1.0.0.dmg",
+      "destination": "https://github.com/sye-saveyoureyes-app/SYE-Desktop/releases/download/v1.0.0/SYE-mac-1.0.0.dmg",
+      "permanent": false
+    }
+  ]
+}

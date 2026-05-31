@@ -108,6 +108,7 @@ img {
   width: 32px;
   height: 32px;
   border-radius: 8px;
+  object-fit: contain;
 }
 
 .nav-links {
@@ -817,10 +818,10 @@ section {
   vertical-align: middle;
 }
 
-.btn-download-placeholder {
+.btn-unavailable {
   pointer-events: none;
-  opacity: 0.85;
-  flex-wrap: wrap;
+  opacity: 0.55;
+  cursor: default;
 }
 
 /* Footer */

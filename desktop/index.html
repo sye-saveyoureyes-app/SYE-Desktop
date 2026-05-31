@@ -11,18 +11,19 @@
   <meta property="og:description" content="Eye protection for your computer">
   <meta property="og:url" content="https://www.getsye.com/desktop/">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="https://www.getsye.com/icon.svg">
+  <meta property="og:image" content="https://www.getsye.com/assets/icon-1024.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="icon" href="../icon.svg" type="image/svg+xml">
+  <link rel="icon" href="/assets/icon-180.png" type="image/png">
+  <link rel="apple-touch-icon" href="/assets/icon-180.png">
   <link rel="stylesheet" href="../css/desktop.css">
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
       <a href="index.html" class="logo">
-        <img src="../icon.svg" alt="" class="logo-icon" width="32" height="32">
+        <img src="/assets/icon-180.png" alt="" class="logo-icon" width="32" height="32">
         SYE
       </a>
       <nav>
@@ -35,8 +36,8 @@
         </ul>
       </nav>
       <div class="header-cta">
-        <a href="mac/index.html" class="btn btn-sm btn-secondary">Mac</a>
-        <a href="windows/index.html" class="btn btn-sm btn-primary">Windows</a>
+        <a href="/downloads/SYE-mac-1.0.0.dmg" class="btn btn-sm btn-primary">Mac</a>
+        <span class="btn btn-sm btn-secondary btn-unavailable">Windows <span class="coming-soon-badge">Soon</span></span>
       </div>
       <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -45,8 +46,8 @@
       </button>
     </div>
     <div class="header-cta header-cta-mobile">
-      <a href="mac/index.html" class="btn btn-secondary">Download for Mac</a>
-      <a href="windows/index.html" class="btn btn-primary">Download for Windows</a>
+      <a href="/downloads/SYE-mac-1.0.0.dmg" class="btn btn-primary">Download for Mac</a>
+      <span class="btn btn-secondary btn-unavailable">Windows <span class="coming-soon-badge">Soon</span></span>
     </div>
   </header>
 
@@ -54,12 +55,12 @@
     <section class="hero">
       <div class="container hero-grid">
         <div class="hero-content">
-          <span class="hero-badge">Desktop · v1</span>
+          <span class="hero-badge">Desktop · v1.0.0</span>
           <h1>Protect your eyes while you work.</h1>
           <p class="hero-sub">SYE adjusts your screen warmth and reminds you to rest — so long days at the computer feel easier on your eyes.</p>
           <div class="btn-group">
-            <a href="mac/index.html" class="btn btn-primary">Download for Mac</a>
-            <a href="windows/index.html" class="btn btn-secondary">Download for Windows</a>
+            <a href="/downloads/SYE-mac-1.0.0.dmg" class="btn btn-primary">Download for Mac</a>
+            <span class="btn btn-secondary btn-unavailable">Windows <span class="coming-soon-badge">Coming soon</span></span>
           </div>
           <div class="hero-links">
             <a href="#screen-temperature">Learn about screen temperature</a>
@@ -299,7 +300,7 @@
           <div class="step">
             <div class="step-num">1</div>
             <h3>Install</h3>
-            <p>Download SYE for Mac or Windows.</p>
+            <p>Download SYE for Mac. Windows coming soon.</p>
           </div>
           <div class="step">
             <div class="step-num">2</div>
@@ -380,7 +381,7 @@
       <div class="container">
         <p class="section-label">Download</p>
         <h2 class="section-title">Get SYE for your computer.</h2>
-        <p class="section-desc">Free screen temperature and eye rest reminders for macOS and Windows.</p>
+        <p class="section-desc">Free screen temperature and eye rest reminders. <strong>Available for Mac</strong> — Windows coming soon.</p>
         <div class="download-cards">
           <div class="download-card">
             <h3>
@@ -390,11 +391,11 @@
             <ul>
               <li>macOS 12+ recommended</li>
               <li>Native display warmth via system gamma (when supported)</li>
-              <li>DMG installer</li>
+              <li>DMG installer · v1.0.0</li>
             </ul>
-            <a href="mac/index.html" class="btn btn-primary">Download for Mac</a>
+            <a href="/downloads/SYE-mac-1.0.0.dmg" class="btn btn-primary">Download for Mac</a>
           </div>
-          <div class="download-card">
+          <div class="download-card" id="download-windows">
             <h3>
               <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M3 5.5A2.5 2.5 0 0 1 5.5 3h13A2.5 2.5 0 0 1 21 5.5v13a2.5 2.5 0 0 1-2.5 2.5h-13A2.5 2.5 0 0 1 3 18.5v-13zM5.5 5a.5.5 0 0 0-.5.5v13a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-13a.5.5 0 0 0-.5-.5h-13z"/><path d="M11 17.5V6.5h1.5v11H11zm-3-3V9.5h1.5v5H8zm6 0V9.5h1.5v5H14z"/></svg>
               Windows
@@ -404,7 +405,7 @@
               <li>Overlay-based temperature</li>
               <li>Squirrel installer (.exe)</li>
             </ul>
-            <a href="windows/index.html" class="btn btn-primary">Download for Windows</a>
+            <span class="btn btn-secondary btn-unavailable">Coming soon</span>
           </div>
         </div>
         <div class="shortcut-hint">
@@ -482,7 +483,7 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <a href="index.html" class="logo">
-            <img src="../icon.svg" alt="" class="logo-icon" width="32" height="32">
+            <img src="/assets/icon-180.png" alt="" class="logo-icon" width="32" height="32">
             SYE — Save Your Eyes
           </a>
           <p><a href="mailto:syecontact.app@gmail.com">syecontact.app@gmail.com</a></p>
@@ -506,11 +507,11 @@
       </div>
       <div class="footer-bottom">
         <div class="btn-group">
-          <a href="mac/index.html" class="btn btn-sm btn-secondary">Download for Mac</a>
-          <a href="windows/index.html" class="btn btn-sm btn-primary">Download for Windows</a>
+          <a href="/downloads/SYE-mac-1.0.0.dmg" class="btn btn-sm btn-primary">Download for Mac</a>
+          <span class="btn btn-sm btn-secondary btn-unavailable">Windows <span class="coming-soon-badge">Soon</span></span>
         </div>
         <span>© 2026 SYE — Save Your Eyes. All rights reserved.</span>
-        <span class="version-stamp">v1-notify-presets · May 2026</span>
+        <span class="version-stamp">v1.0.0 · May 2026</span>
       </div>
     </div>
   </footer>
