@@ -11,18 +11,18 @@
   <meta property="og:description" content="Eye protection for your computer">
   <meta property="og:url" content="https://www.getsye.com/desktop/">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="https://www.getsye.com/assets/icon.svg">
+  <meta property="og:image" content="https://www.getsye.com/icon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="icon" href="../assets/icon.svg" type="image/svg+xml">
+  <link rel="icon" href="../icon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../css/desktop.css">
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
       <a href="index.html" class="logo">
-        <img src="../assets/icon.svg" alt="" class="logo-icon" width="32" height="32">
+        <img src="../icon.svg" alt="" class="logo-icon" width="32" height="32">
         SYE
       </a>
       <nav>
@@ -31,7 +31,7 @@
           <li><a href="#how-it-works">How it works</a></li>
           <li><a href="#download">Download</a></li>
           <li><a href="#faq">FAQ</a></li>
-          <li><a href="https://www.getsye.com/contact.html">Support</a></li>
+          <li><a href="#faq">Support</a></li>
         </ul>
       </nav>
       <div class="header-cta">
@@ -54,7 +54,7 @@
     <section class="hero">
       <div class="container hero-grid">
         <div class="hero-content">
-          <span class="hero-badge">Desktop · v3.3</span>
+          <span class="hero-badge">Desktop · v1</span>
           <h1>Protect your eyes while you work.</h1>
           <p class="hero-sub">SYE adjusts your screen warmth and reminds you to rest — so long days at the computer feel easier on your eyes.</p>
           <div class="btn-group">
@@ -63,7 +63,7 @@
           </div>
           <div class="hero-links">
             <a href="#screen-temperature">Learn about screen temperature</a>
-            <a href="#eye-rest">Eye rest timer</a>
+            <a href="#eye-exercises">Eye exercises</a>
           </div>
         </div>
         <div class="hero-visual">
@@ -82,22 +82,22 @@
               <div class="temp-presets">
                 <div class="preset-card">
                   <div class="label">Day</div>
-                  <div class="value">5000K</div>
+                  <div class="value">4400K</div>
                 </div>
                 <div class="preset-card active">
                   <div class="label">Evening</div>
-                  <div class="value">4400K</div>
+                  <div class="value">3400K</div>
                 </div>
                 <div class="preset-card">
                   <div class="label">Night</div>
-                  <div class="value">3400K</div>
+                  <div class="value">0K</div>
                 </div>
               </div>
               <div class="slider-row">
                 <div class="slider-label">
-                  <span>Warm</span>
-                  <span class="kelvin">4400K · 85%</span>
-                  <span>Cool</span>
+                  <span>0K</span>
+                  <span class="kelvin">3400K · 80%</span>
+                  <span>6500K</span>
                 </div>
                 <div class="slider-track">
                   <div class="slider-thumb"></div>
@@ -117,17 +117,17 @@
       <div class="container">
         <p class="section-label">Features</p>
         <h2 class="section-title">Everything your eyes need at the desk.</h2>
-        <p class="section-desc">Screen warmth and 20-20-20 breaks — local-first, no account required, runs quietly in the background.</p>
+        <p class="section-desc">Screen warmth, 20-20-20 breaks, and guided eye exercises — local-first, no account required, runs quietly in the background.</p>
         <div class="features-grid">
           <article class="feature-card" id="screen-temperature">
             <div class="feature-icon warm">🌡️</div>
             <h3>Screen Temperature</h3>
             <p>Reduce blue light with embedded display warmth (native macOS gamma) or a transparent overlay fallback.</p>
             <ul class="feature-list">
-              <li>Day — 5000K / 100% brightness</li>
-              <li>Evening — 4400K / 85% brightness</li>
-              <li>Night — 3400K / 80% brightness</li>
-              <li>Custom slider from 2700K (warm) to 6500K (cool)</li>
+              <li>Day — 4400K / 70% brightness</li>
+              <li>Evening — 3400K / 80% brightness</li>
+              <li>Night — 0K / 100% (zero blue light, deep warm red)</li>
+              <li>Custom slider from 0K (warmest / Night) to 6500K (cool)</li>
               <li>Toggle on/off from Home or Temperature tab</li>
               <li>Works while using any app (Safari, IDE, etc.)</li>
             </ul>
@@ -141,7 +141,21 @@
               <li>Countdown timer with Skip option</li>
               <li>System notifications — macOS / Windows notification center</li>
               <li>On-screen banner — 5 min, 1 min, 30 sec before break</li>
-              <li>Configurable interval (5–120 min) and break duration (5–120 sec)</li>
+              <li>Configurable interval (5 min – 2 hours) and break duration (5 sec – 10 min)</li>
+              <li>Active hours — auto-starts inside your schedule; manual enable works anytime</li>
+            </ul>
+          </article>
+          <article class="feature-card" id="eye-exercises">
+            <div class="feature-icon teal">🧘</div>
+            <h3>Guided Eye Exercises</h3>
+            <p>Six on-demand routines with per-step timers. Longer exercises use an audio chime when each step changes.</p>
+            <ul class="feature-list">
+              <li>20-20-20 Focus — 20 sec</li>
+              <li>Figure Eight — ~1.5 min (audio)</li>
+              <li>Near–Far Focus — ~1.5 min (audio)</li>
+              <li>Blink Reset — ~45 sec (audio)</li>
+              <li>Palming Rest — 5 min (audio)</li>
+              <li>Distance Gaze — 5 min (audio)</li>
             </ul>
           </article>
           <article class="feature-card">
@@ -154,10 +168,16 @@
               <li>Open SYE · Quit</li>
             </ul>
           </article>
-          <article class="feature-card">
+          <article class="feature-card" id="active-hours">
             <div class="feature-icon violet">🕐</div>
             <h3>Active hours</h3>
-            <p>Optional schedule — SYE only runs between set start/end times (e.g. 09:00–18:00).</p>
+            <p>Optional schedule (e.g. 09:00–18:00). Active hours control when SYE turns features on automatically — you can always enable screen temperature or eye rest yourself from Home or the menu bar, and they stay on until you turn them off.</p>
+            <ul class="feature-list">
+              <li>Inside the window: auto-starts if enabled in settings (e.g. computer on at 9:30 AM)</li>
+              <li>Outside the window: features won’t auto-start on launch</li>
+              <li>Manual enable always works — stays on until you disable it</li>
+              <li>Eye exercises are always available and ignore active hours</li>
+            </ul>
           </article>
           <article class="feature-card">
             <div class="feature-icon blue">🚀</div>
@@ -186,33 +206,84 @@
             <tbody>
               <tr>
                 <td>Day</td>
-                <td class="kelvin">5000K</td>
-                <td>100%</td>
+                <td class="kelvin">4400K</td>
+                <td>70%</td>
                 <td>Light warm tint for daytime</td>
               </tr>
               <tr>
                 <td>Evening</td>
-                <td class="kelvin">4400K</td>
-                <td>85%</td>
-                <td>Gentle transition toward night</td>
+                <td class="kelvin">3400K</td>
+                <td>80%</td>
+                <td>Warm orange evening shift</td>
               </tr>
               <tr>
                 <td>Night</td>
-                <td class="kelvin">3400K</td>
-                <td>80%</td>
-                <td>Warm orange — typical night mode comfort</td>
+                <td class="kelvin">0K</td>
+                <td>100%</td>
+                <td>Zero blue light — deep warm red</td>
               </tr>
               <tr>
                 <td>Custom min</td>
-                <td class="kelvin">2700K</td>
+                <td class="kelvin">0K</td>
                 <td>user</td>
-                <td>Deepest warm on manual slider</td>
+                <td>Deepest warm / Night on manual slider</td>
               </tr>
               <tr>
                 <td>Custom max</td>
                 <td class="kelvin">6500K</td>
                 <td>100%</td>
                 <td>Neutral / no tint</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section id="eye-exercises-detail">
+      <div class="container">
+        <p class="section-label">Exercises</p>
+        <h2 class="section-title">Guided eye exercises</h2>
+        <p class="section-desc">Available anytime from the Exercises tab. Each step stays on screen for its full duration. Audio exercises show: “Turn your volume up. A soft chime marks each new step.”</p>
+        <div class="preset-table-wrap">
+          <table class="preset-table">
+            <thead>
+              <tr>
+                <th>Exercise</th>
+                <th>Duration</th>
+                <th>Audio</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>20-20-20 Focus</td>
+                <td>20 sec</td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td>Figure Eight</td>
+                <td>~1.5 min</td>
+                <td>Yes</td>
+              </tr>
+              <tr>
+                <td>Near–Far Focus</td>
+                <td>~1.5 min</td>
+                <td>Yes</td>
+              </tr>
+              <tr>
+                <td>Blink Reset</td>
+                <td>~45 sec</td>
+                <td>Yes</td>
+              </tr>
+              <tr>
+                <td>Palming Rest</td>
+                <td>5 min</td>
+                <td>Yes</td>
+              </tr>
+              <tr>
+                <td>Distance Gaze</td>
+                <td>5 min</td>
+                <td>Yes</td>
               </tr>
             </tbody>
           </table>
@@ -253,7 +324,7 @@
       <div class="container">
         <p class="section-label">Notifications</p>
         <h2 class="section-title">Eye rest reminders</h2>
-        <p class="section-desc">Test reminders anytime from Settings → Test Reminder.</p>
+        <p class="section-desc">Settings → Test Reminder shows a system notification and on-screen banner on the first click (banner is preloaded at app start).</p>
         <div class="preset-table-wrap">
           <table class="preset-table">
             <thead>
@@ -298,7 +369,8 @@
             <li>Eye rest timers run entirely on-device</li>
           </ul>
           <div class="privacy-note">
-            <p>SYE Desktop does not use Supabase, Screen Time APIs, or cloud sync. The <a href="https://www.getsye.com/privacypolicy.html">Privacy Policy</a> on getsye.com describes the iOS app in detail; the Mac and Windows app keeps all data on your machine unless cloud features are added in a future version.</p>
+            <p>SYE Desktop does not use Supabase, Screen Time APIs, or cloud sync. The Mac and Windows app keeps all data on your machine unless cloud features are added in a future version.</p>
+            <p style="margin-top: 1rem;">By using SYE Desktop, you agree to the SYE — Save Your Eyes Terms of Service and Privacy Policy. Questions: <a href="mailto:syecontact.app@gmail.com">syecontact.app@gmail.com</a> · <a href="#faq">FAQ &amp; Help</a></p>
           </div>
         </div>
       </div>
@@ -375,11 +447,20 @@
           </div>
           <div class="faq-item">
             <button class="faq-question" aria-expanded="false">
+              How do active hours work?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              Active hours control when SYE turns features on automatically. Inside your schedule, eye rest and screen temperature auto-start if enabled in settings. Outside the window, they won’t auto-start on launch — but you can always turn them on manually from Home or the menu bar, and they stay on until you disable them.
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
               Does SYE make my screen red at night?
               <span class="faq-icon">+</span>
             </button>
             <div class="faq-answer">
-              Night mode uses a warm 3400K orange tint (similar to common eye-comfort tools), not an extreme red sleep filter.
+              Night preset uses 0K — zero blue/green for a deep warm red. Evening (3400K) is a milder orange shift.
             </div>
           </div>
           <div class="faq-item">
@@ -388,7 +469,7 @@
               <span class="faq-icon">+</span>
             </button>
             <div class="faq-answer">
-              Yes — use the slider from 2700K to 6500K on the Temperature tab.
+              Yes — use the slider from 0K to 6500K on the Temperature tab.
             </div>
           </div>
         </div>
@@ -401,7 +482,7 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <a href="index.html" class="logo">
-            <img src="../assets/icon.svg" alt="" class="logo-icon" width="32" height="32">
+            <img src="../icon.svg" alt="" class="logo-icon" width="32" height="32">
             SYE — Save Your Eyes
           </a>
           <p><a href="mailto:syecontact.app@gmail.com">syecontact.app@gmail.com</a></p>
@@ -411,15 +492,15 @@
           <ul>
             <li><a href="https://www.getsye.com/">Home</a></li>
             <li><a href="#features">Features</a></li>
-            <li><a href="https://www.getsye.com/contact.html">Support</a></li>
+            <li><a href="#faq">Support</a></li>
           </ul>
         </div>
         <div class="footer-col">
           <h4>Legal</h4>
           <ul>
-            <li><a href="https://www.getsye.com/privacypolicy.html">Privacy</a></li>
-            <li><a href="https://www.getsye.com/termsofservice.html">Terms</a></li>
-            <li><a href="https://www.getsye.com/contact.html">FAQ</a></li>
+            <li><a href="#privacy">Privacy</a></li>
+            <li><a href="#privacy">Terms</a></li>
+            <li><a href="#faq">FAQ</a></li>
           </ul>
         </div>
       </div>
@@ -429,7 +510,7 @@
           <a href="windows/index.html" class="btn btn-sm btn-primary">Download for Windows</a>
         </div>
         <span>© 2026 SYE — Save Your Eyes. All rights reserved.</span>
-        <span class="version-stamp">v3.3.0 · May 2026</span>
+        <span class="version-stamp">v1-notify-presets · May 2026</span>
       </div>
     </div>
   </footer>
