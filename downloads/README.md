@@ -1,17 +1,13 @@
-# SYE Desktop download (Mac)
+# SYE Desktop downloads
 
-The DMG is **130 MB** — too large for GitHub’s 100 MB file limit in the repo.
+## Mac (v1.0.0)
 
-## One-time setup: GitHub Release
+- **File:** `SYE-mac-1.0.0.zip` (~99 MB)
+- **URL:** `/downloads/SYE-mac-1.0.0.zip`
+- **Install:** Unzip → drag SYE to Applications → Right-click → Open on first launch
 
-1. Open [github.com/sye-saveyoureyes-app/SYE-Desktop/releases/new](https://github.com/sye-saveyoureyes-app/SYE-Desktop/releases/new)
-2. Tag: **`v1.0.0`**
-3. Title: **SYE Desktop v1.0.0 (Mac)**
-4. Upload: `SYE-mac-1.0.0.dmg` (from `sye-desktop/out/make/` or `downloads/` locally)
-5. Publish release
+Build output: `sye-desktop/out/make/SYE-mac-1.0.0.zip`
 
-The site links to **`/downloads/SYE-mac-1.0.0.dmg`**, which Vercel redirects to the GitHub Release asset.
+## Windows
 
-## Local copy
-
-Keep the DMG at `downloads/SYE-mac-1.0.0.dmg` locally (gitignored) for testing.
+Coming soon.
