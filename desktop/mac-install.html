@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Install SYE on Mac — “Damaged” fix</title>
+  <meta name="description" content="SYE is not damaged. Fix macOS Gatekeeper and quarantine warnings when installing SYE Desktop from the web.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="icon" href="/assets/icon-180.png" type="image/png">
+  <link rel="stylesheet" href="../css/desktop.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <img src="/assets/icon-180.png" alt="" class="logo-icon" width="32" height="32">
+        SYE
+      </a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html#download">Download</a></li>
+          <li><a href="mac/index.html">Mac</a></li>
+          <li><a href="index.html#faq">FAQ</a></li>
+        </ul>
+      </nav>
+      <div class="header-cta">
+        <a href="/downloads/SYE-mac-1.0.0.zip" class="btn btn-sm btn-primary">Download ZIP</a>
+      </div>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main class="legal-page">
+    <div class="container">
+      <p class="section-label">Mac install</p>
+      <h1>SYE is not damaged</h1>
+      <p class="legal-meta">macOS Gatekeeper · SYE Desktop v1.0.0</p>
+
+      <div class="install-warning" style="max-width: none; margin-bottom: 32px;">
+        <strong>Important:</strong> If macOS says <em>“SYE is damaged and can’t be opened”</em>, the download is fine. Apple blocks apps from the web that are not yet signed and notarized. <strong>Do not delete SYE</strong> — follow the steps below.
+      </div>
+
+      <div class="legal-body">
+        <h2>Install SYE</h2>
+        <ol class="install-steps">
+          <li>Download <a href="/downloads/SYE-mac-1.0.0.zip">SYE-mac-1.0.0.zip</a> and double-click it in Finder to unzip.</li>
+          <li>Drag <strong>SYE.app</strong> to your <strong>Applications</strong> folder.</li>
+          <li><strong>First launch:</strong> Right-click (or Control-click) <strong>SYE.app</strong> → <strong>Open</strong> → click <strong>Open</strong> in the dialog. Do not double-click the first time.</li>
+        </ol>
+
+        <h2>Still blocked?</h2>
+        <p><strong>System Settings:</strong> Open <strong>System Settings → Privacy &amp; Security</strong>. After trying to open SYE once, look for <strong>“Open Anyway”</strong> next to a message about SYE being blocked.</p>
+
+        <p><strong>Terminal</strong> (removes Apple’s quarantine flag — safe for apps you downloaded from this site):</p>
+        <pre><code>xattr -cr /Applications/SYE.app</code></pre>
+        <p>If SYE is still in Downloads, use:</p>
+        <pre><code>xattr -cr ~/Downloads/SYE.app</code></pre>
+        <p>Then open SYE normally.</p>
+
+        <h2>What the messages mean</h2>
+        <ul>
+          <li><strong>“Damaged and can’t be opened”</strong> — quarantine on an unsigned app, not a corrupt file.</li>
+          <li><strong>“Developer cannot be verified”</strong> — same; use Right-click → Open or Open Anyway.</li>
+          <li><strong>“Move to Trash”</strong> — Gatekeeper; don’t trash it — use the steps above.</li>
+        </ul>
+
+        <h2>Need help?</h2>
+        <p>Email <a href="mailto:syecontact.app@gmail.com">syecontact.app@gmail.com</a> or see the <a href="index.html#faq">FAQ</a>.</p>
+        <p style="margin-top: 24px;"><a href="mac/index.html">← Back to Mac download</a> · <a href="index.html">SYE Desktop home</a></p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom" style="border-top: none; padding-top: 0;">
+        <span>© 2026 SYE — Save Your Eyes. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

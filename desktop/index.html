@@ -62,7 +62,8 @@
             <a href="/downloads/SYE-mac-1.0.0.zip" class="btn btn-primary">Download for Mac</a>
             <span class="btn btn-secondary btn-unavailable">Windows <span class="coming-soon-badge">Coming soon</span></span>
           </div>
-          <p class="install-note"><strong>First time on Mac?</strong> Unzip, drag to Applications, then Right-click → Open on first launch.</p>
+          <p class="install-note"><strong>Install:</strong> Unzip → drag to Applications → <strong>Right-click → Open</strong> on first launch. <a href="mac-install.html">Mac install guide</a></p>
+          <p class="install-warning"><strong>“Damaged” warning?</strong> Not a broken file — <a href="mac-install.html">see how to open SYE on Mac</a>.</p>
           <div class="hero-links">
             <a href="#screen-temperature">Learn about screen temperature</a>
             <a href="#eye-exercises">Eye exercises</a>
@@ -395,7 +396,8 @@
               <li>ZIP installer · v1.0.0</li>
             </ul>
             <a href="/downloads/SYE-mac-1.0.0.zip" class="btn btn-primary">Download for Mac</a>
-            <p class="install-note" style="margin-top: 16px;"><strong>First time on Mac?</strong> Unzip, drag to Applications, then Right-click → Open on first launch.</p>
+            <p class="install-note" style="margin-top: 16px;"><strong>Install:</strong> Unzip → drag to Applications → <strong>Right-click → Open</strong> on first launch. <a href="mac-install.html">Install guide</a></p>
+            <p class="install-warning" style="margin-top: 12px;"><strong>“Damaged and can’t be opened”?</strong> <a href="mac-install.html">The app is fine — fix Gatekeeper here</a>.</p>
           </div>
           <div class="download-card" id="download-windows">
             <h3>
@@ -464,6 +466,15 @@
             </button>
             <div class="faq-answer">
               Night preset uses 0K — zero blue/green for a deep warm red. Evening (3400K) is a milder orange shift.
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              macOS says SYE is “damaged and can’t be opened” — is the download broken?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              No — the file is not damaged. macOS Gatekeeper blocks apps downloaded from the web that are not yet Apple-signed and notarized, and shows a misleading “damaged” message. Do not delete SYE. Unzip the download, drag SYE.app to Applications, then Right-click → Open on first launch. If that does not work, open System Settings → Privacy &amp; Security → Open Anyway, or run <code style="font-family: var(--font-mono); font-size: 0.85rem;">xattr -cr /Applications/SYE.app</code> in Terminal. See the <a href="mac-install.html">Mac install guide</a> for full steps.
             </div>
           </div>
           <div class="faq-item">

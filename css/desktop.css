@@ -1029,3 +1029,89 @@ section {
   color: var(--text-primary);
 }
 
+.install-note a {
+  color: var(--accent-blue);
+}
+
+.install-warning {
+  margin-top: 16px;
+  padding: 14px 18px;
+  border-radius: var(--radius-btn);
+  background: rgba(255, 176, 122, 0.1);
+  border: 1px solid rgba(255, 176, 122, 0.35);
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  max-width: 640px;
+}
+
+.install-warning strong {
+  color: var(--accent-warm);
+}
+
+.install-steps {
+  counter-reset: step;
+  list-style: none;
+  margin: 24px 0;
+  padding: 0;
+}
+
+.install-steps li {
+  counter-increment: step;
+  position: relative;
+  padding: 16px 16px 16px 52px;
+  margin-bottom: 12px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-btn);
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+.install-steps li::before {
+  content: counter(step);
+  position: absolute;
+  left: 16px;
+  top: 16px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--accent-blue-glow);
+  border: 1px solid rgba(96, 165, 250, 0.3);
+  color: var(--accent-blue);
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.install-steps code,
+.legal-body code {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  background: var(--bg-base);
+  padding: 2px 6px;
+  border-radius: 4px;
+  border: 1px solid var(--border-subtle);
+  color: var(--text-primary);
+}
+
+.install-steps pre {
+  margin-top: 10px;
+  padding: 12px 14px;
+  border-radius: 8px;
+  background: var(--bg-base);
+  border: 1px solid var(--border-subtle);
+  overflow-x: auto;
+}
+
+.install-steps pre code {
+  display: block;
+  padding: 0;
+  border: none;
+  background: none;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
