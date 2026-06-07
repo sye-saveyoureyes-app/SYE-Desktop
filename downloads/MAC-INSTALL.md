@@ -1,6 +1,6 @@
 # Installing SYE on Mac
 
-SYE Desktop v1.0.0 is **signed and notarized** by Apple.
+SYE Desktop is **signed and notarized** by Apple.
 
 ## Install
 
@@ -11,12 +11,13 @@ SYE Desktop v1.0.0 is **signed and notarized** by Apple.
 
 No Privacy & Security workaround needed.
 
-## v1.0.0 includes
+## Build v3.7.5-temp-restore
 
-- Updated temperature presets and controls
-- Improved 20-20-20 eye rest defaults
-- Dock and menu bar hint for first-time users
+- Restored temperature presets and controls
+- Original SYE logo restored
+- 20-20 eye rest improvements
+- Menu bar hint for first-time users
 - No arrow-key shortcuts
-- Notifications that don’t steal focus
+- Notification focus fix
 
 **Support:** syecontact.app@gmail.com
