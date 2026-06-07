@@ -1,33 +1,25 @@
 # SYE Desktop downloads
 
-## Mac (v1.0.0)
+## Mac (v1.0.0) — signed & notarized
 
-- **File:** `SYE-mac-1.0.0.zip` (~99 MB)
+- **File:** `SYE-mac-1.0.0.zip` (~97 MB)
 - **URL:** `/downloads/SYE-mac-1.0.0.zip`
-- **Install guide:** `/desktop/mac-install.html` or `MAC-INSTALL.md` in this folder
+- **Install guide:** `/desktop/mac-install.html`
 
-### Install (short)
+### Install
 
-1. Unzip the download
-2. Drag **SYE.app** to Applications
-3. **Right-click → Open** on first launch (do not double-click the first time)
+1. Download the ZIP
+2. Unzip in Finder
+3. Drag **SYE - Save Your Eyes** to **Applications**
+4. Open from Applications
 
-### “Damaged and can’t be opened”
+Upload the binary as-is — do not re-zip on the host.
 
-The app is **not damaged**. macOS quarantine blocks unsigned apps from the web.
+Build output: `sye-desktop/out/make/SYE-mac-1.0.0.zip`
 
-- Right-click SYE.app → Open → Open
-- Or: System Settings → Privacy & Security → Open Anyway
-- Or Terminal: `xattr -cr /Applications/SYE.app`
+### Optional DMG (~107 MB)
 
-See **MAC-INSTALL.md** for the full user guide.
-
-### Developer: stop Gatekeeper warnings permanently
-
-1. Apple Developer Program ($99/year)
-2. Sign with **Developer ID Application**
-3. Notarize with `notarytool`
-4. Staple ticket before distributing the ZIP
+A DMG build may be offered if your host allows files over 100 MB (GitHub’s repo limit). The ZIP is the primary download.
 
 ## Windows
 
