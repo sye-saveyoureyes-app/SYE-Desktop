@@ -1,10 +1,10 @@
 {
   "headers": [
     {
-      "source": "/downloads/(.*\\.dmg)",
+      "source": "/downloads/(.*\\.zip)",
       "headers": [
-        { "key": "Content-Type", "value": "application/octet-stream" },
-        { "key": "Content-Disposition", "value": "attachment; filename=\"SYE-mac-1.0.0.dmg\"" }
+        { "key": "Content-Type", "value": "application/zip" },
+        { "key": "Content-Disposition", "value": "attachment; filename=\"SYE-mac-1.0.0.zip\"" }
       ]
     }
   ]

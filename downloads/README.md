@@ -1,6 +1,6 @@
 # SYE Desktop downloads
 
-## Mac (v1.0.0) — signed & notarized · Jun 14, 2026
+## Mac (v1.0.0) — signed & notarized · Jun 15, 2026
 
 | File | Size | URL |
 |------|------|-----|
