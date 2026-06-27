@@ -55,9 +55,9 @@
     <section class="hero">
       <div class="container hero-grid">
         <div class="hero-content">
-          <span class="hero-badge">Desktop · v1.0.0 · Jun 15, 2026</span>
+          <span class="hero-badge">Desktop · Version 1 · Jun 27, 2026</span>
           <h1>Protect your eyes while you work.</h1>
-          <p class="hero-sub">SYE adjusts your screen warmth and reminds you to rest — so long days at the computer feel easier on your eyes.</p>
+          <p class="hero-sub">Warm your screen and take regular eye breaks — SYE runs in the background so long days feel easier on your eyes.</p>
           <div class="btn-group">
             <a href="https://github.com/sye-saveyoureyes-app/SYE-Desktop/releases/download/v1.0.0/SYE-mac-1.0.0.dmg" class="btn btn-primary">Download for Mac</a>
             <span class="btn btn-secondary btn-unavailable">Windows <span class="coming-soon-badge">Coming soon</span></span>
@@ -84,7 +84,7 @@
               <div class="temp-presets">
                 <div class="preset-card">
                   <div class="label">Day</div>
-                  <div class="value">4400K</div>
+                  <div class="value">5000K</div>
                 </div>
                 <div class="preset-card active">
                   <div class="label">Evening</div>
@@ -119,32 +119,33 @@
       <div class="container">
         <p class="section-label">Features</p>
         <h2 class="section-title">Everything your eyes need at the desk.</h2>
-        <p class="section-desc">Screen warmth, 20-20-20 breaks, and guided eye exercises — local-first, no account required, runs quietly in the background.</p>
+        <p class="section-desc">SYE helps reduce eye strain during long screen time with screen temperature and the 20-20-20 rule. Everything runs on your computer — no account, no cloud sync.</p>
         <div class="features-grid">
           <article class="feature-card" id="screen-temperature">
             <div class="feature-icon warm">🌡️</div>
             <h3>Screen Temperature</h3>
-            <p>Reduce blue light with embedded display warmth (native macOS gamma) or a transparent overlay fallback.</p>
+            <p>Shift your display toward warmer tones with presets or a manual slider — less blue light at night.</p>
             <ul class="feature-list">
-              <li>Day — 4400K / 70% brightness</li>
-              <li>Evening — 3400K / 80% brightness</li>
-              <li>Night — 0K / 100% (zero blue light, deep warm red)</li>
-              <li>Custom slider from 0K (warmest / Night) to 6500K (cool)</li>
-              <li>Toggle on/off from Home or Temperature tab</li>
-              <li>Works while using any app (Safari, IDE, etc.)</li>
+              <li>Day — 5000K</li>
+              <li>Evening — 3400K</li>
+              <li>Night — 0K (deepest warm tone, zero blue light)</li>
+              <li>Slider from 0K (Night) to 6500K (cool / neutral)</li>
+              <li>Toggle on or off from the Temp tab or menu bar</li>
+              <li>Native display warmth on Mac when available; overlay fallback otherwise</li>
+              <li>Reset display clears SYE’s effect and returns normal macOS settings</li>
             </ul>
           </article>
           <article class="feature-card" id="eye-rest">
             <div class="feature-icon blue">👁️</div>
-            <h3>20-20-20 Eye Rest</h3>
-            <p>Every 20 minutes (configurable), SYE prompts you to look away for 20 seconds.</p>
+            <h3>Eye Rest (20-20-20)</h3>
+            <p>Regular reminders to look away from the screen — default every 20 minutes, for 20 seconds.</p>
             <ul class="feature-list">
+              <li>Interval: 5 min – 2 hours · Break length: 5 sec – 10 min</li>
               <li>Full-screen break overlay on all monitors</li>
-              <li>Countdown timer with Skip option</li>
-              <li>System notifications — macOS / Windows notification center</li>
-              <li>On-screen banner — 5 min, 1 min, 30 sec before break</li>
-              <li>Configurable interval (5 min – 2 hours) and break duration (5 sec – 10 min)</li>
-              <li>Active hours — auto-starts inside your schedule; manual enable works anytime</li>
+              <li>Reminders before each break (1 min and 10 sec always on; 5 min and 30 sec optional)</li>
+              <li>Lecture / reading mode — gentler copy for classes and reading</li>
+              <li>Skip button — optional; off by default</li>
+              <li>Break now and Pause 30 min from the menu bar</li>
             </ul>
           </article>
           <article class="feature-card" id="eye-exercises">
@@ -162,29 +163,61 @@
           </article>
           <article class="feature-card">
             <div class="feature-icon teal">⚡</div>
-            <h3>Menu bar / system tray</h3>
-            <p>Quick access without leaving your workflow.</p>
+            <h3>Menu bar</h3>
+            <p>SYE lives in the menu bar (not the Dock). Right-click the icon for quick actions.</p>
             <ul class="feature-list">
-              <li>Quick toggle for screen temperature</li>
-              <li>Eye rest on/off</li>
-              <li>Open SYE · Quit</li>
+              <li>Open SYE</li>
+              <li>Toggle screen temperature</li>
+              <li>Toggle eye rest</li>
+              <li>Break now · Pause eye rest 30 min</li>
+              <li>Quit</li>
             </ul>
+          </article>
+          <article class="feature-card" id="quick-start">
+            <div class="feature-icon violet">🏠</div>
+            <h3>Quick start (Home)</h3>
+            <p>One-tap modes for common situations. Pick a duration (up to 2 hours); SYE applies settings immediately and restores your previous setup when time is up.</p>
+            <ul class="feature-list">
+              <li><strong>Weekday classes</strong> — Day temperature + eye rest every 20 min</li>
+              <li><strong>Late night cram</strong> — 0K night temperature + 30 min breaks + lecture mode</li>
+              <li>Active schedules always take priority over quick start</li>
+            </ul>
+          </article>
+          <article class="feature-card" id="schedules">
+            <div class="feature-icon blue">📅</div>
+            <h3>Schedules</h3>
+            <p>Automate temperature and eye rest by day and time.</p>
+            <ul class="feature-list">
+              <li>Up to 5 schedules (e.g. school hours, late-night study)</li>
+              <li>When a schedule runs, it controls SYE until that window ends</li>
+              <li>Skip today or tomorrow per schedule</li>
+              <li>Schedules override manual changes and quick start while active</li>
+            </ul>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon teal">⏱️</div>
+            <h3>Corner timers</h3>
+            <p>Small draggable HUDs for time since last break or session length.</p>
           </article>
           <article class="feature-card" id="active-hours">
             <div class="feature-icon violet">🕐</div>
             <h3>Active hours</h3>
-            <p>Optional schedule (e.g. 09:00–18:00). Active hours control when SYE turns features on automatically — you can always enable screen temperature or eye rest yourself from Home or the menu bar, and they stay on until you turn them off.</p>
-            <ul class="feature-list">
-              <li>Inside the window: auto-starts if enabled in settings (e.g. computer on at 9:30 AM)</li>
-              <li>Outside the window: features won’t auto-start on launch</li>
-              <li>Manual enable always works — stays on until you disable it</li>
-              <li>Eye exercises are always available and ignore active hours</li>
-            </ul>
+            <p>Limit when SYE auto-starts on login (e.g. 9:00–18:00). You can still turn features on manually anytime.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon teal">🔋</div>
+            <h3>Battery saver</h3>
+            <p>Reduces background work and hides corner timers. On Mac, also follows macOS Low Power Mode.</p>
           </article>
           <article class="feature-card">
             <div class="feature-icon blue">🚀</div>
             <h3>Launch at login</h3>
-            <p>Start SYE automatically when you sign in — set it once and forget about it.</p>
+            <p>Start SYE automatically when you sign in.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon violet">⏹️</div>
+            <h3>Force stop</h3>
+            <p>Instantly stops everything: skips all schedules for today, stops eye rest, turns off temperature, ends quick start.</p>
           </article>
         </div>
       </div>
@@ -194,47 +227,31 @@
       <div class="container">
         <p class="section-label">Presets</p>
         <h2 class="section-title">Temperature presets</h2>
-        <p class="section-desc">Intensity controls brightness dimming only; color warmth is driven by kelvin — so you get a visible temperature shift, not just a darker screen.</p>
+        <p class="section-desc">Warm your display with presets or a manual slider.</p>
         <div class="preset-table-wrap">
           <table class="preset-table">
             <thead>
               <tr>
                 <th>Preset</th>
-                <th>Kelvin</th>
-                <th>Intensity</th>
-                <th>Description</th>
+                <th>Setting</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td>Day</td>
-                <td class="kelvin">4400K</td>
-                <td>70%</td>
-                <td>Light warm tint for daytime</td>
+                <td class="kelvin">5000K</td>
               </tr>
               <tr>
                 <td>Evening</td>
                 <td class="kelvin">3400K</td>
-                <td>80%</td>
-                <td>Warm orange evening shift</td>
               </tr>
               <tr>
                 <td>Night</td>
                 <td class="kelvin">0K</td>
-                <td>100%</td>
-                <td>Zero blue light — deep warm red</td>
               </tr>
               <tr>
-                <td>Custom min</td>
-                <td class="kelvin">0K</td>
-                <td>user</td>
-                <td>Deepest warm / Night on manual slider</td>
-              </tr>
-              <tr>
-                <td>Custom max</td>
-                <td class="kelvin">6500K</td>
-                <td>100%</td>
-                <td>Neutral / no tint</td>
+                <td>Slider range</td>
+                <td class="kelvin">0K – 6500K</td>
               </tr>
             </tbody>
           </table>
@@ -246,7 +263,7 @@
       <div class="container">
         <p class="section-label">Exercises</p>
         <h2 class="section-title">Guided eye exercises</h2>
-        <p class="section-desc">Available anytime from the Exercises tab. Each step stays on screen for its full duration. Audio exercises show: “Turn your volume up. A soft chime marks each new step.”</p>
+        <p class="section-desc">Available from the Exercises tab — six guided routines with per-step timers.</p>
         <div class="preset-table-wrap">
           <table class="preset-table">
             <thead>
@@ -301,59 +318,23 @@
           <div class="step">
             <div class="step-num">1</div>
             <h3>Install</h3>
-            <p>Download SYE for Mac. Windows coming soon.</p>
+            <p>Download the DMG for Mac, open it, and drag SYE to Applications.</p>
           </div>
           <div class="step">
             <div class="step-num">2</div>
             <h3>Enable temperature</h3>
-            <p>Pick Day, Evening, or Night — or use the slider.</p>
+            <p>Pick Day, Evening, or Night — or use the slider from the Temp tab.</p>
           </div>
           <div class="step">
             <div class="step-num">3</div>
             <h3>Enable eye rest</h3>
-            <p>Set your interval and break length.</p>
+            <p>Set your interval and break length, or try a quick start mode.</p>
           </div>
           <div class="step">
             <div class="step-num">4</div>
             <h3>Keep working</h3>
-            <p>SYE runs in the background; reminders appear system-wide.</p>
+            <p>SYE runs in the menu bar; reminders appear system-wide.</p>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="container">
-        <p class="section-label">Notifications</p>
-        <h2 class="section-title">Eye rest reminders</h2>
-        <p class="section-desc">Settings → Test Reminder shows a system notification and on-screen banner on the first click (banner is preloaded at app start).</p>
-        <div class="preset-table-wrap">
-          <table class="preset-table">
-            <thead>
-              <tr>
-                <th>When</th>
-                <th>Message</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>5 minutes before</td>
-                <td>Eye rest in 5 minutes</td>
-              </tr>
-              <tr>
-                <td>1 minute before</td>
-                <td>Eye rest in 1 minute</td>
-              </tr>
-              <tr>
-                <td>30 seconds before</td>
-                <td>Eye rest in 30 seconds</td>
-              </tr>
-              <tr>
-                <td>Break starts</td>
-                <td>Full-screen overlay + countdown</td>
-              </tr>
-            </tbody>
-          </table>
         </div>
       </div>
     </section>
@@ -365,14 +346,18 @@
         <div class="privacy-grid">
           <ul class="privacy-list">
             <li>No account required</li>
-            <li>No analytics SDKs</li>
-            <li>Settings stored on your computer</li>
-            <li>Screen temperature applied locally (native gamma or overlay)</li>
-            <li>Eye rest timers run entirely on-device</li>
+            <li>Settings stored locally on your device</li>
+            <li>Screen temperature applied on-device only</li>
+            <li>No analytics SDKs in the desktop app</li>
           </ul>
           <div class="privacy-note">
-            <p>SYE Desktop does not use Supabase, Screen Time APIs, or cloud sync. The Mac and Windows app keeps all data on your machine unless cloud features are added in a future version.</p>
-            <p style="margin-top: 1rem;">By using SYE Desktop, you agree to our <a href="terms.html">Terms of Service</a> and <a href="privacy.html">Privacy Policy</a>. Questions: <a href="mailto:syecontact.app@gmail.com">syecontact.app@gmail.com</a> · <a href="#faq">FAQ &amp; Help</a></p>
+            <p>SYE Desktop keeps all data on your machine. No cloud sync.</p>
+            <p style="margin-top: 1rem;">Questions: <a href="mailto:syecontact.app@gmail.com">syecontact.app@gmail.com</a></p>
+            <p style="margin-top: 1rem;">
+              <a href="https://www.getsye.com/privacypolicy.html">Privacy Policy</a> ·
+              <a href="https://www.getsye.com/termsofservice.html">Terms of Service</a> ·
+              <a href="https://www.getsye.com/contact.html">FAQ &amp; Help</a>
+            </p>
           </div>
         </div>
       </div>
@@ -392,7 +377,7 @@
             <ul>
               <li>macOS 12+ recommended</li>
               <li>Native display warmth via system gamma (when supported)</li>
-              <li>DMG installer · v1.0.0 · signed &amp; notarized (~107 MB)</li>
+              <li>DMG installer · Version 1 · signed &amp; notarized (~107 MB)</li>
               <li><a href="/downloads/SYE-mac-1.0.0.zip" style="color: var(--text-muted); font-size: 0.875rem;">Also available as ZIP (~98 MB)</a></li>
             </ul>
             <a href="https://github.com/sye-saveyoureyes-app/SYE-Desktop/releases/download/v1.0.0/SYE-mac-1.0.0.dmg" class="btn btn-primary">Download for Mac</a>
@@ -411,9 +396,6 @@
             <span class="btn btn-secondary btn-unavailable">Coming soon</span>
           </div>
         </div>
-        <div class="shortcut-hint">
-          Keyboard shortcut: <kbd>⌘⇧T</kbd> / <kbd>Ctrl⇧T</kbd> — Toggle screen temperature
-        </div>
       </div>
     </section>
 
@@ -424,47 +406,29 @@
         <div class="faq-list">
           <div class="faq-item">
             <button class="faq-question" aria-expanded="false">
-              Does SYE work while I use Safari or other apps?
+              Does SYE work in Safari, Chrome, and other apps?
               <span class="faq-icon">+</span>
             </button>
             <div class="faq-answer">
-              Yes. Screen temperature applies to the whole display. Eye rest reminders use system notifications and a floating banner at the top of your screen.
+              Yes. Temperature applies to the whole display. Break reminders appear system-wide.
             </div>
           </div>
           <div class="faq-item">
             <button class="faq-question" aria-expanded="false">
-              Why do I need to allow notifications?
+              Where is the app?
               <span class="faq-icon">+</span>
             </button>
             <div class="faq-answer">
-              macOS and Windows require permission to show reminders in Notification Center while SYE is in the background. The on-screen banner works even if notifications are disabled.
+              In the menu bar at the top of your screen. Right-click the SYE icon for quick actions.
             </div>
           </div>
           <div class="faq-item">
             <button class="faq-question" aria-expanded="false">
-              Is SYE the same as the iPhone app?
+              What is Night / 0K?
               <span class="faq-icon">+</span>
             </button>
             <div class="faq-answer">
-              Same brand and mission. Desktop focuses on screen warmth and 20-20-20 breaks; the iOS app adds Screen Time and app blocking.
-            </div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">
-              How do active hours work?
-              <span class="faq-icon">+</span>
-            </button>
-            <div class="faq-answer">
-              Active hours control when SYE turns features on automatically. Inside your schedule, eye rest and screen temperature auto-start if enabled in settings. Outside the window, they won’t auto-start on launch — but you can always turn them on manually from Home or the menu bar, and they stay on until you disable them.
-            </div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">
-              Does SYE make my screen red at night?
-              <span class="faq-icon">+</span>
-            </button>
-            <div class="faq-answer">
-              Night preset uses 0K — zero blue/green for a deep warm red. Evening (3400K) is a milder orange shift.
+              The warmest preset — removes blue light for late-night use. Evening (3400K) is a milder shift.
             </div>
           </div>
           <div class="faq-item">
@@ -478,11 +442,11 @@
           </div>
           <div class="faq-item">
             <button class="faq-question" aria-expanded="false">
-              Can I customize the warmth?
+              Is SYE the same as the iPhone app?
               <span class="faq-icon">+</span>
             </button>
             <div class="faq-answer">
-              Yes — use the slider from 0K to 6500K on the Temperature tab.
+              Same brand and mission. Desktop focuses on screen warmth and 20-20-20 breaks; the iOS app adds Screen Time and app blocking.
             </div>
           </div>
         </div>
@@ -523,7 +487,7 @@
           <span class="btn btn-sm btn-secondary btn-unavailable">Windows <span class="coming-soon-badge">Soon</span></span>
         </div>
         <span>© 2026 SYE — Save Your Eyes. All rights reserved.</span>
-        <span class="version-stamp">v3.7.5-temp-restore · Jun 2026</span>
+        <span class="version-stamp">SYE Desktop — Version 1 · May 2026</span>
       </div>
     </div>
   </footer>
