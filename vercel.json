@@ -1,10 +1,23 @@
 {
+  "redirects": [
+    {
+      "source": "/favicon.ico",
+      "destination": "/assets/icon-32.png",
+      "permanent": false
+    }
+  ],
   "headers": [
     {
       "source": "/downloads/(.*\\.zip)",
       "headers": [
         { "key": "Content-Type", "value": "application/zip" },
         { "key": "Content-Disposition", "value": "attachment; filename=\"SYE-mac-1.0.0.zip\"" }
+      ]
+    },
+    {
+      "source": "/assets/icon-(.*)\\.png",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=86400" }
       ]
     }
   ]
